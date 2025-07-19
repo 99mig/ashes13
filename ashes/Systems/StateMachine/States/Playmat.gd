@@ -14,7 +14,7 @@ func _on_next_transitions() -> void:
 
 
 func _on_enter() -> void:
-	pass
+	print_debug("-----ACTIVE STATE PLAYMAT-----")
 
 func _on_exit() -> void:
 	pass

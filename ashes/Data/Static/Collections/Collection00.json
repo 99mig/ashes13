@@ -1,0 +1,58 @@
+{
+    "00_001_Card": {
+        "Number": 1,
+        "Collection": 0,
+        "Name": "Heroe 01",
+        "Title": "Heroe title 01",
+        "Description": "Heroe description 01",
+        "Type": "HeroCard",
+        "Illustration": "",
+        "Rarity": "Common",
+
+        "Health": 1,
+        "MagicPower": 1,
+        "PhysicalPower": 1,
+        "Intelligence": 1,
+
+        "HeroResistances": [
+            {
+                "Type": "Blue",
+                "Operator": "Sum",
+                "Value": 1
+            },
+            {
+                "Type": "Red",
+                "Operator": "Sub",
+                "Value": 1
+            }
+        ]
+    },
+   "00_002_Card": {
+        "Number": 2,
+        "Collection": 0,
+        "Name": "Heroe 02",
+        "Title": "Heroe title 02",
+        "Description": "Heroe description 02",
+        "Type": "HeroCard",
+        "Illustration": "",
+        "Rarity": "Common",
+
+        "Health": 2,
+        "MagicPower": 2,
+        "PhysicalPower": 2,
+        "Intelligence": 2,
+
+        "HeroResistances": [
+            {
+                "Type": "Blue",
+                "Operator": "Sum",
+                "Value": 2
+            },
+            {
+                "Type": "Red",
+                "Operator": "Sub",
+                "Value": 2
+            }
+        ]
+    }
+}
