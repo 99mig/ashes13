@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://beqdpaxveqox1"]
+
+[ext_resource type="Script" uid="uid://byh7t3xa7pk8x" path="res://Components/CardSets/CardSet.gd" id="1_lao7n"]
+[ext_resource type="Shader" uid="uid://01wbsgxvg8le" path="res://Data/Resources/Shaders/Cards/CardOnHolder.gdshader" id="2_uit1w"]
+[ext_resource type="Texture2D" uid="uid://ch5wxonrff0nj" path="res://Data/Assets/Cards/CardDefault.png" id="3_ocpec"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2c6c0"]
+shader = ExtResource("2_uit1w")
+shader_parameter/iso_scale = 1.0
+shader_parameter/sprite_size = Vector2(128, 128)
+
+[node name="CardSet" type="Node2D"]
+script = ExtResource("1_lao7n")
+
+[node name="CardSetSprite" type="Node2D" parent="."]
+position = Vector2(-20.02, -94.66)
+scale = Vector2(0.7, 0.7)
+
+[node name="CardSprite1" type="Sprite2D" parent="CardSetSprite"]
+material = SubResource("ShaderMaterial_2c6c0")
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_ocpec")
+
+[node name="CardSprite2" type="Sprite2D" parent="CardSetSprite"]
+material = SubResource("ShaderMaterial_2c6c0")
+position = Vector2(-7.28, 4.275)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_ocpec")
+
+[node name="CardSprite3" type="Sprite2D" parent="CardSetSprite"]
+material = SubResource("ShaderMaterial_2c6c0")
+position = Vector2(-15.915, 7.24)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_ocpec")
+
+[node name="CardSprite4" type="Sprite2D" parent="CardSetSprite"]
+material = SubResource("ShaderMaterial_2c6c0")
+position = Vector2(-24.725, 11.895)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_ocpec")
+
+[node name="CardSprite5" type="Sprite2D" parent="CardSetSprite"]
+material = SubResource("ShaderMaterial_2c6c0")
+position = Vector2(-34.66, 16.305)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_ocpec")
+
+[node name="CardSetArea" type="Area2D" parent="."]
+
+[node name="CardSetCollision" type="CollisionPolygon2D" parent="CardSetArea"]
+polygon = PackedVector2Array(-77, -56, -15, -15, 15, -23, 17, -126, -55, -177, -74, -161)

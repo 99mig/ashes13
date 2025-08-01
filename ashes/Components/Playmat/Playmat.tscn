@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c621v3ddb4pfd"]
+
+[ext_resource type="TileSet" uid="uid://bgei3blmutajm" path="res://Data/Resources/TileBlocks/TileBlocks00.tres" id="1_abekm"]
+[ext_resource type="Script" uid="uid://na80lyby3wqd" path="res://Components/Playmat/Playmat.gd" id="1_pu2sa"]
+
+[node name="Playmat" type="Node2D"]
+script = ExtResource("1_pu2sa")
+
+[node name="BackgroundLayer" type="TileMapLayer" parent="."]
+position = Vector2(0, 16)
+tile_set = ExtResource("1_abekm")
+
+[node name="ComponentsLayer" type="TileMapLayer" parent="."]
+tile_set = ExtResource("1_abekm")
+
+[node name="ActiveHolders" type="Node2D" parent="."]
+
+[node name="ActiveSlots" type="Node2D" parent="."]

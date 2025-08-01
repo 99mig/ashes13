@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="BaseTileBlock" load_steps=4 format=3 uid="uid://dhgxtglfy4ctf"]
+
+[ext_resource type="Texture2D" uid="uid://o6drmt1s5cpr" path="res://Data/Assets/TileBlocks/TileBlocks00.png" id="1_d0mhd"]
+[ext_resource type="Script" uid="uid://c5mcbpn0tpbv2" path="res://Data/Resources/TileBlocks/Models/BaseTileBlockModel.gd" id="2_40cqc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cy36t"]
+atlas = ExtResource("1_d0mhd")
+region = Rect2(512, 416, 128, 112)
+
+[resource]
+script = ExtResource("2_40cqc")
+TileBlockID = "Holder_02"
+MaxQuantity = 24
+Sprite = SubResource("AtlasTexture_cy36t")
+Dimensions = Vector3i(3, 1, 1)
+Description = "Holder 02"
+CanBePlaced = true
+Rarity = 0
+Type = 4
+AtlasID = 0
+AtlasCoords = Vector2i(16, 26)
+metadata/_custom_type_script = "uid://c5mcbpn0tpbv2"

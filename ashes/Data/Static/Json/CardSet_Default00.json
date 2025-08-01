@@ -1,0 +1,284 @@
+{
+	"00_001_Card": {
+		"Number": 1,
+		"Collection": 0,
+		"Name": "Heroe 01",
+		"Title": "Heroe title 01",
+		"Description": "Heroe description 01",
+		"Type": "HeroCard",
+		"Illustration": "",
+		"Rarity": "Common",
+
+		"Health": 1,
+		"MagicPower": 1,
+		"PhysicalPower": 1,
+		"Intelligence": 1,
+
+		"HeroResistances": [
+			{
+				"Type": "Blue",
+				"Operator": "Sum",
+				"Value": 1
+			},
+			{
+				"Type": "Red",
+				"Operator": "Sub",
+				"Value": 1
+			}
+		]
+	},
+   "00_002_Card": {
+		"Number": 2,
+		"Collection": 0,
+		"Name": "Heroe 02",
+		"Title": "Heroe title 02",
+		"Description": "Heroe description 02",
+		"Type": "HeroCard",
+		"Illustration": "",
+		"Rarity": "Common",
+
+		"Health": 2,
+		"MagicPower": 2,
+		"PhysicalPower": 2,
+		"Intelligence": 2,
+
+		"HeroResistances": [
+			{
+				"Type": "Blue",
+				"Operator": "Sum",
+				"Value": 2
+			},
+			{
+				"Type": "Red",
+				"Operator": "Sub",
+				"Value": 2
+			}
+		]
+	},
+	"00_003_Card": {
+		"Number": 3,
+		"Collection": 0,
+		"Name": "Heroe 03",
+		"Title": "Heroe title 03",
+		"Description": "Heroe description 03",
+		"Type": "HeroCard",
+		"Illustration": "",
+		"Rarity": "Common",
+
+		"Health": 2,
+		"MagicPower": 2,
+		"PhysicalPower": 2,
+		"Intelligence": 2,
+
+		"HeroResistances": [
+			{
+				"Type": "Blue",
+				"Operator": "Sum",
+				"Value": 2
+			},
+			{
+				"Type": "Red",
+				"Operator": "Sub",
+				"Value": 2
+			}
+		]
+	},
+	"00_004_Card": {
+		"Number": 4,
+		"Collection": 0,
+		"Name": "Class 01",
+		"Title": "Class title 01",
+		"Description": "Class description 01",
+		"Type": "ClassCard",
+		"Illustration": "",
+		"Rarity": "Common",
+
+		"Health": 2,
+		"MagicPower": 2,
+		"PhysicalPower": 2,
+		"Agility": 2,
+
+		"ClassAbilities": [
+			{
+				"Type": "Effect",
+				"Ability": "Revivir"
+			}
+		]
+	},
+	"00_005_Card": {
+		"Number": 5,
+		"Collection": 0,
+		"Name": "Class 02",
+		"Title": "Class title 02",
+		"Description": "Class description 02",
+		"Type": "ClassCard",
+		"Illustration": "",
+		"Rarity": "Common",
+
+		"Health": 2,
+		"MagicPower": 2,
+		"PhysicalPower": 2,
+		"Agility": 2,
+
+		"ClassAbilities": [
+			{
+				"Type": "Effect",
+				"Ability": "Revivir"
+			}
+		]
+	},
+	"00_006_Card": {
+		"Number": 6,
+		"Collection": 0,
+		"Name": "Class 03",
+		"Title": "Class title 03",
+		"Description": "Class description 03",
+		"Type": "ClassCard",
+		"Illustration": "",
+		"Rarity": "Common",
+
+		"Health": 2,
+		"MagicPower": 2,
+		"PhysicalPower": 2,
+		"Agility": 2,
+
+		"ClassAbilities": [
+			{
+				"Type": "Effect",
+				"Ability": "Revivir"
+			}
+		]
+	},
+	"00_007_Card": {
+		"Number": 7,
+		"Collection": 0,
+		"Name": "Summon 01",
+		"Title": "Summon title 01",
+		"Description": "Summon description 01",
+		"Type": "SummonCard",
+		"Illustration": "",
+		"Rarity": "Common",
+
+		"Health": 2,
+		"PlayCost": 2,
+		"Dexterity": 2,
+
+		"SummonResistances": [
+			{
+				"Type": "Blue",
+				"Operator": "Sum",
+				"Value": 2
+			},
+			{
+				"Type": "Red",
+				"Operator": "Sub",
+				"Value": 2
+			}
+		],
+		"SummonAbilities": [
+			{
+				"Type": "Effect",
+				"Ability": "Revivir"
+			}
+		]
+	},
+	"00_008_Card": {
+		"Number": 8,
+		"Collection": 0,
+		"Name": "Summon 02",
+		"Title": "Summon title 02",
+		"Description": "Summon description 02",
+		"Type": "SummonCard",
+		"Illustration": "",
+		"Rarity": "Common",
+
+		"Health": 2,
+		"PlayCost": 2,
+		"Dexterity": 2,
+
+		"SummonResistances": [
+			{
+				"Type": "Blue",
+				"Operator": "Sum",
+				"Value": 2
+			},
+			{
+				"Type": "Red",
+				"Operator": "Sub",
+				"Value": 2
+			}
+		],
+		"SummonAbilities": [
+			{
+				"Type": "Effect",
+				"Ability": "Revivir"
+			}
+		]
+	},
+	"00_009_Card": {
+		"Number": 9,
+		"Collection": 0,
+		"Name": "Summon 03",
+		"Title": "Summon title 03",
+		"Description": "Summon description 03",
+		"Type": "SummonCard",
+		"Illustration": "",
+		"Rarity": "Common",
+
+		"Health": 2,
+		"PlayCost": 2,
+		"Dexterity": 2,
+
+		"SummonResistances": [
+			{
+				"Type": "Blue",
+				"Operator": "Sum",
+				"Value": 2
+			},
+			{
+				"Type": "Red",
+				"Operator": "Sub",
+				"Value": 2
+			}
+		],
+		"SummonAbilities": [
+			{
+				"Type": "Effect",
+				"Ability": "Revivir"
+			}
+		]
+	},
+	"00_010_Card": {
+		"Number": 10,
+		"Collection": 0,
+		"Name": "Summon 04",
+		"Title": "Summon title 04",
+		"Description": "Summon description 04",
+		"Type": "SummonCard",
+		"Illustration": "",
+		"Rarity": "Common",
+
+		"Health": 2,
+		"PlayCost": 2,
+		"Dexterity": 2,
+
+		"SummonResistances": [
+			{
+				"Type": "Blue",
+				"Operator": "Sum",
+				"Value": 2
+			},
+			{
+				"Type": "Red",
+				"Operator": "Sub",
+				"Value": 2
+			}
+		],
+		"SummonAbilities": [
+			{
+				"Type": "Effect",
+				"Ability": "Revivir"
+			}
+		]
+	}
+}

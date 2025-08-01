@@ -1,0 +1,56 @@
+{
+	"StarterDeck01": {
+		"FrontCard": "00_001_Card",
+		"CreatedBy": "Ashes",
+		"Hero": [
+			"00_001_Card",
+			"00_003_Card"
+		],
+		"CardsOnSet": [
+			"00_001_Card",
+			"00_004_Card",
+			"00_007_Card",
+			"00_008_Card",
+			"00_009_Card",
+			"00_010_Card",
+			"00_009_Card",
+			"00_010_Card"
+		]
+	},
+	"StarterDeck02": {
+		"FrontCard": "00_002_Card",
+		"CreatedBy": "Ashes",
+		"Hero": [
+			"00_002_Card",
+			"00_003_Card"
+		],
+		"CardsOnSet": [
+			"00_002_Card",
+			"00_005_Card",
+			"00_009_Card",
+			"00_010_Card",
+			"00_008_Card",
+			"00_007_Card",
+			"00_007_Card",
+			"00_010_Card"
+		]
+	},
+	"StarterDeck03": {
+		"FrontCard": "00_003_Card",
+		"CreatedBy": "Ashes",
+		"Hero": [
+			"00_003_Card",
+			"00_006_Card"
+		],
+		"CardsOnSet": [
+			"00_003_Card",
+			"00_006_Card",
+			"00_007_Card",
+			"00_008_Card",
+			"00_009_Card",
+			"00_008_Card",
+			"00_008_Card",
+			"00_010_Card"
+		]
+	}
+}

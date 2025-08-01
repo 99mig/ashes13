@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="BaseTileBlock" load_steps=3 format=3 uid="uid://yovkirkmtnup"]
+
+[ext_resource type="Script" uid="uid://c5mcbpn0tpbv2" path="res://Data/Resources/TileBlocks/Models/BaseTileBlockModel.gd" id="2_ujcp0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cy36t"]
+region = Rect2(0, 224, 256, 208)
+
+[resource]
+script = ExtResource("2_ujcp0")
+TileBlockID = "EmptySlot_01"
+MaxQuantity = 24
+Sprite = SubResource("AtlasTexture_cy36t")
+Dimensions = Vector3i(3, 5, 1)
+Description = "Empty Slot 01"
+CanBePlaced = false
+Rarity = 0
+Type = 3
+AtlasID = 0
+AtlasCoords = Vector2i(0, 14)
+metadata/_custom_type_script = "uid://c5mcbpn0tpbv2"

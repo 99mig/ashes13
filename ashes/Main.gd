@@ -8,11 +8,12 @@ func _init() -> void:
 
 ##----------------------------------------------------------------##
 
+const GameController = preload("res://Controllers/GameController.gd")
+
 
 @onready var GameInput: GameInput = $Input
 @onready var World: Node2D = $World
 @onready var UI: Control = $UI
-
 
 @onready var CurrentGameState = GlobalData.MainGameState.Start
 
@@ -46,8 +47,10 @@ Controllers
 Data
 	Todos los scripts q son datos, estaticos y globales
 Services
-	Todos los scripts con funciones q devuelven algo, q se usan repetidamente en varias cosas
+	Todos los scripts con funciones q devuelven algo, q se usan
+	repetidamente en varias cosas
 Systems
-	Maneja los systemas del gameplay como las acciones
+	Maneja los systemas del gameplay q no necesitan escenas directas
+	como las acciones
 
 """

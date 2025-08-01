@@ -9,6 +9,10 @@ func _input(event: InputEvent) -> void:
 			var object = raycast_check_for_areas()
 			if object:
 				print_debug(object)
+				var object_type = object.get_object_type()
+				print_debug(object_type)
+				Game.Main.Systems.Actions.execute_component_function(object, GlobalData.MapComponent.keys()[object_type])
+
 		elif event.is_action_released("MouseLeftClick"):
 			print("out Left click")
 		elif event.is_action_pressed("MouseRightClick"):

@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bga4cpvavmrgq"]
+
+[ext_resource type="Script" uid="uid://b6wldgc8qh2c2" path="res://Components/Holder/Holder.gd" id="1_p4mt2"]
+[ext_resource type="TileSet" uid="uid://bgei3blmutajm" path="res://Data/Resources/TileBlocks/TileBlocks00.tres" id="2_spd3t"]
+
+[node name="Holder" type="Node2D"]
+script = ExtResource("1_p4mt2")
+
+[node name="HolderSprite" type="Sprite2D" parent="."]
+position = Vector2(-32, -32)
+
+[node name="TileBlock" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 0, 0, 16, 0, 19, 0, 0, 0)
+tile_set = ExtResource("2_spd3t")
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionPolygon2D" parent="Area"]
+polygon = PackedVector2Array(-64, -87, -95, -64, -95, -48, 0, 23, 31, 0, 31, -16)
+
+[node name="HoldingScene" type="Node2D" parent="."]
+
+[node name="CardPosition" type="Marker2D" parent="HoldingScene"]
+position = Vector2(-22, -101)

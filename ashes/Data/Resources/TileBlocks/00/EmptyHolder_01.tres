@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="BaseTileBlock" load_steps=3 format=3 uid="uid://ch3tla8c8wog6"]
+
+[ext_resource type="Script" uid="uid://c5mcbpn0tpbv2" path="res://Data/Resources/TileBlocks/Models/BaseTileBlockModel.gd" id="2_ppem2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cy36t"]
+region = Rect2(512, 192, 128, 112)
+
+[resource]
+script = ExtResource("2_ppem2")
+TileBlockID = "EmptyHolder_01"
+MaxQuantity = 24
+Sprite = SubResource("AtlasTexture_cy36t")
+Dimensions = Vector3i(1, 3, 1)
+Description = "Empty Holder 01"
+CanBePlaced = true
+Rarity = 0
+Type = 5
+AtlasID = 0
+AtlasCoords = Vector2i(16, 12)
+metadata/_custom_type_script = "uid://c5mcbpn0tpbv2"
