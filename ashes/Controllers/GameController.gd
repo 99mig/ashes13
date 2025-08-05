@@ -24,7 +24,7 @@ static func load_game() -> bool :
 		return false
 	print_debug("Card set data loaded")
 	#populando la variable con el set de cartas activas
-	if !Systems.CardSetSystems.CardSetsController.set_active_card_sets(card_sets_data):
+	if !Systems.CardSetSystems.CardSetController.set_active_card_sets(card_sets_data):
 		print_debug("Can't active card sets")
 		return false
 	print_debug("Card set data active")
@@ -35,7 +35,7 @@ static func load_game() -> bool :
 		print_debug("Can't load tile blocks data")
 		return false
 	#popular la variable con los tileblocks activos
-	if !Systems.PlaymatSystem.PlaymatTiles.set_active_playmat_tiles(playmat_tiles_data):
+	if !Systems.PlaymatSystem.PlaymatTilesController.set_active_playmat_tiles(playmat_tiles_data):
 		print_debug("Can't active tile blocks")
 		return false
 		
@@ -48,7 +48,7 @@ static func load_game() -> bool :
 		print_debug("Can't load default decks")
 		return false
 	
-	if !Systems.CardSetSystems.DecksController.set_active_card_decks(deck_default_data):
+	if !Systems.CardSetSystems.DeckController.set_active_card_decks(deck_default_data):
 		print_debug("Can't active the default decks")
 		return false
 	

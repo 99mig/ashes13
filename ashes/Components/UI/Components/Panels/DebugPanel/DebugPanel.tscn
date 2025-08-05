@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://ucylhmvxeew6"]
+
+[ext_resource type="Script" uid="uid://c5r0c511pinlx" path="res://Components/UI/Components/Panels/DebugPanel/DebugPanel.gd" id="1_jj54r"]
+
+[node name="DebugPanel" type="Panel"]
+custom_minimum_size = Vector2(150, 300)
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -150.0
+offset_right = 150.0
+offset_bottom = 150.0
+grow_vertical = 2
+script = ExtResource("1_jj54r")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="MousePosition" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "pos(0,0)"
+
+[node name="MouseCoords" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "coords(0,0)"

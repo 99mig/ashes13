@@ -36,3 +36,12 @@ func set_camera_mode(mode: GlobalData.CameraMode, data := {}) -> void:
 		GlobalData.CameraMode.FocusOn:
 			FocusOn.focus(data)
 			FocusOn.set_process(true)
+
+
+
+
+func get_camera_rect() -> Rect2:
+	var camera_center = get_screen_center_position()
+	var camera_viewport = get_canvas_transform().affine_inverse().basis_xform(get_viewport_rect().size)
+	var half_viewport = camera_viewport * 0.5
+	return Rect2((camera_center.x - half_viewport.x), (camera_center.y - half_viewport.y), camera_viewport.x, camera_viewport.y)

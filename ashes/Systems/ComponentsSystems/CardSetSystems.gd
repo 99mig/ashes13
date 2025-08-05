@@ -1,5 +1,5 @@
 extends Node
 
-const CardSetsController = preload("res://Components/CardSets/Controllers/CardSetsController.gd")
-const CardSetsFactory = preload("res://Components/CardSets/Controllers/CardSetsFactory.gd")
-const DecksController = preload("res://Components/CardSets/Controllers/DecksController.gd")
+const CardSetController = preload("res://Components/CardSets/Controllers/CardSetController.gd")
+const CardSetFactory = preload("res://Components/CardSets/Controllers/CardSetFactory.gd")
+const DeckController = preload("res://Components/CardSets/Controllers/DeckController.gd")

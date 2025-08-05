@@ -12,6 +12,7 @@ const GameController = preload("res://Controllers/GameController.gd")
 
 
 @onready var GameInput: GameInput = $Input
+@onready var Actions: Node2D = $Actions
 @onready var World: Node2D = $World
 @onready var UI: Control = $UI
 

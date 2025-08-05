@@ -43,6 +43,15 @@ enum CameraMode {
 	FreeMode,
 	FocusOn
 }
+
+enum ComponentType {
+	Card,
+	CardSet,
+	Holder,
+	EmptyHolder,
+	Slot,
+	EmptySlot
+}
 """
 Cards
 """

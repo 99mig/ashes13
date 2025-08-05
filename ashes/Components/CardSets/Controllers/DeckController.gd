@@ -6,7 +6,7 @@ static func set_active_card_decks(active_decks : Dictionary) -> bool:
 	#recive el json y guarda el diccionario resultante
 	if active_decks is Dictionary:
 		ActiveDecksData = active_decks
-		print_debug("Active decks: ", ActiveDecksData)
+		#print_debug("Active decks: ", ActiveDecksData)
 		return true
 	print_debug("Can't active the decks")
 	return false

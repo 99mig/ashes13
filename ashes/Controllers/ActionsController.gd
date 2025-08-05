@@ -1,6 +1,8 @@
+class_name GameActions
 extends Node2D
 
 var object_being_dragged
+var is_component_being_dragged = false
 
 
 
@@ -10,8 +12,8 @@ func _physics_process(delta: float) -> void:
 	if object_being_dragged :
 		print_debug("CARD ACTIONS", object_being_dragged)
 		var mouse_pos = World.Main.get_global_mouse_position()
-		object_being_dragged.position = Vector2(	clamp(mouse_pos.x, Game.Main.Camera.get_camera_rect().position.x, Game.Main.Camera.get_camera_rect().end.x),
-												clamp(mouse_pos.y, Game.Main.Camera.get_camera_rect().position.y, Game.Main.Camera.get_camera_rect().end.y))
+		object_being_dragged.position = Vector2(	clamp(mouse_pos.x, World.Main.Camera.get_camera_rect().position.x, World.Main.Camera.get_camera_rect().end.x),
+												clamp(mouse_pos.y, World.Main.Camera.get_camera_rect().position.y, World.Main.Camera.get_camera_rect().end.y))
 
 
 
@@ -33,9 +35,10 @@ func out_select_component():
 	DRAG
 """
 
-func start_drag(object) :
-	print_debug("START DRAG: ", object)
-	object_being_dragged = object
+func start_drag(component) :
+	print_debug("START DRAG: ", component)
+	object_being_dragged = component
+	is_component_being_dragged = true
 	object_being_dragged.scale = Vector2(1.1,1.1)
 
 

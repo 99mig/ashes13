@@ -6,19 +6,21 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.is_action_pressed("MouseLeftClick"):
 			print("Left click")
-			var object = raycast_check_for_areas()
-			if object:
-				print_debug(object)
-				var object_type = object.get_object_type()
-				print_debug(object_type)
-				Game.Main.Systems.Actions.execute_component_function(object, GlobalData.MapComponent.keys()[object_type])
+			var component_clicked = raycast_check_for_areas()
+			if component_clicked:
+				print_debug(component_clicked)
+				var component_clicked_type = component_clicked.get_component_type()
+				print_debug(component_clicked_type)
+				GameController.Systems.Actions.execute_component_function(component_clicked, GlobalData.ComponentType.keys()[component_clicked_type])
 
 		elif event.is_action_released("MouseLeftClick"):
 			print("out Left click")
+			if Game.Main.Actions.is_component_being_dragged:
+				Game.Main.Actions.finish_drag()
 		elif event.is_action_pressed("MouseRightClick"):
 			print("Right click")
 		elif event.is_action_released("MouseRightClick"):
-				print("out Right click")
+			print("out Right click")
 
 
 

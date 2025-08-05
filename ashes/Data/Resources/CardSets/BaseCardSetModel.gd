@@ -5,7 +5,7 @@ class_name BaseCardSetModel extends Resource
 @export var DateCreated : String = "010101"
 @export var CreatedBy : String = "Ashes"
 
-@export var Name : String = "Card Set Base"
+@export var Title : String = "Card Set Base"
 @export_multiline var Description : String = "Base card description"
 
 @export var Type : GlobalData.CardSetTypes = GlobalData.CardSetTypes.BaseCardSet
@@ -18,6 +18,6 @@ class_name BaseCardSetModel extends Resource
 
 func load_data(cardset_id: String, data: Dictionary) -> void:
 	CardSetID = cardset_id
-	for key in ["Name", "Title", "Description", "Type", "DateCreated", "CreatedBy", "FrontCard", "CardsOnSet"]:
+	for key in ["Title", "Description", "Type", "DateCreated", "CreatedBy", "FrontCard", "CardsOnSet"]:
 		if data.has(key):
 			self.set(key, data[key])

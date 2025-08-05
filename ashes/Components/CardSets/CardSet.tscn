@@ -10,6 +10,7 @@ shader_parameter/iso_scale = 1.0
 shader_parameter/sprite_size = Vector2(128, 128)
 
 [node name="CardSet" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_lao7n")
 
 [node name="CardSetSprite" type="Node2D" parent="."]
@@ -49,3 +50,19 @@ texture = ExtResource("3_ocpec")
 
 [node name="CardSetCollision" type="CollisionPolygon2D" parent="CardSetArea"]
 polygon = PackedVector2Array(-77, -56, -15, -15, 15, -23, 17, -126, -55, -177, -74, -161)
+
+[node name="CardSetTitle" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = -191.0
+offset_right = 46.0
+offset_bottom = -168.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.575959
+size_flags_horizontal = 4
+text = "CardSet Name"

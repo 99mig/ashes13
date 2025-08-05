@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dqvxtb55bktgu"]
+[gd_scene load_steps=3 format=3 uid="uid://dqvxtb55bktgu"]
 
 [ext_resource type="Script" uid="uid://c522vjaanlkxt" path="res://Components/UI/UI.gd" id="1_x0hyn"]
+[ext_resource type="PackedScene" uid="uid://ucylhmvxeew6" path="res://Components/UI/Components/Panels/DebugPanel/DebugPanel.tscn" id="2_8eqyd"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -10,3 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_x0hyn")
+
+[node name="Canvas" type="CanvasLayer" parent="."]
+
+[node name="DebugPanel" parent="Canvas" instance=ExtResource("2_8eqyd")]

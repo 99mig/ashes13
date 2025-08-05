@@ -1,4 +1,4 @@
 class_name BaseCard
-extends Node2D
+extends BaseComponent
 
 @export var CardResource : BaseCardModel

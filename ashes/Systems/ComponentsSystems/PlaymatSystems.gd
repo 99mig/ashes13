@@ -1,2 +1,6 @@
-const PlaymatTiles = preload("res://Components/Playmat/Systems/PlaymatTiles/PlaymatTilesSystem.gd")
-const ComponentsFactory = preload("res://Components/Playmat/Systems/ComponentsFactory.gd")
+const PlaymatTilesController = preload("res://Components/Playmat/Controllers/PlaymatTilesController.gd")
+
+"""
+Holder
+"""
+const HolderFactory = preload("res://Components/Holder/Controllers/HolderFactory.gd")

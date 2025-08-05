@@ -7,3 +7,5 @@ func _init() -> void:
 	Main = self
 
 ##----------------------------------------------------------------##
+
+@onready var DebugPanel: Panel = $Canvas/DebugPanel

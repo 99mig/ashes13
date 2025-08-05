@@ -4,6 +4,7 @@
 [ext_resource type="TileSet" uid="uid://bgei3blmutajm" path="res://Data/Resources/TileBlocks/TileBlocks00.tres" id="2_spd3t"]
 
 [node name="Holder" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_p4mt2")
 
 [node name="HolderSprite" type="Sprite2D" parent="."]

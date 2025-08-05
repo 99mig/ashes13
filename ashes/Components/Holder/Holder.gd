@@ -1,4 +1,5 @@
-extends Node2D
+class_name BaseHolder
+extends BaseComponent
 
 @export var HolderTileBlockResource : Resource
 @onready var HolderSprite: Sprite2D = $HolderSprite
