@@ -1,19 +1,26 @@
-## Main Game
-# Main player movement and input handling system
-# 
-# This script manages player movement, jumping, and input processing.
-# It extends CharacterBody2D and provides smooth movement mechanics.
-#
-# @author: Your Name
-# @version: 1.0
-# @since: 2024-01-01z
+# Main Game
+# A comprehensive player movement and interaction system
+# @tags: core, player, movement
+# @author: GameDev Team
+# @version: 1.2.0
 
 class_name Game
 extends Node
 
-static var Main: Game
+## Main player character controller with movement and abilities
+## Handles input processing, physics, and state management
+## @tags: main, controller
 
+# Main var
+# @tags: movement, config
+static var Main: Game ## Main reference
+
+## Handle physics processing each frame
+## Manages movement, jumping, and gravity
+## @param delta: Time since last frame in seconds
+## @tags: physics, movement, core
 func _init() -> void: 
+	# refernecia principal
 	Main = self
 
 # @const_title: gamecontroller
@@ -42,20 +49,13 @@ const GameController = preload("res://Controllers/GameController.gd")
 func _ready() -> void:
 	_set_main_state_machine()
 
-# @func_title: move_player
-# Handles player movement based on input
-#
-# This function processes input from the player and applies movement
-# to the character body. It includes acceleration, deceleration,
-# and collision handling.
-#
-# @param delta: The time elapsed since the last frame
-# @param input_vector: Vector2 representing input direction
-# @return: bool - True if movement was successful
-# @example:
-#   var success = move_player(delta, Vector2(1, 0))
+## anade el state machine principal
+## Manages ssssssssssssravity
+## @return: void
+## @tags: physics, movement, core
 func _set_main_state_machine() -> void :
-	var MainStateMachineScene = load(GlobalData.MainGameStateMachine).instantiate()
+	# en esta variable se inicializa el scipt
+	var MainStateMachineScene = load(GlobalData.MainGameStateMachine).instantiate() # no se si hay dif de comment
 	add_child(MainStateMachineScene)
 
 
