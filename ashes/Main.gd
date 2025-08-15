@@ -15,22 +15,21 @@ static var Main: Game
 
 func _init() -> void: 
 	Main = self
-#<CONST>
+
+# @const_title: gamecontroller
 # cargamos el game controller principal
 const GameController = preload("res://Controllers/GameController.gd")
-#</CONST>
-#<VAR>
-# @title: GameInput 
+
+# @var_title: GameInput 
 # Variables en Main en nodos
 # Los inputs del juego
 @onready var GameInput: GameInput = $Input
-#</VAR>
-#<VAR>
-# @title: world
+
+# @var_title: world
 # el mundo
-#</VAR>
 @onready var World: Node2D = $World
-# @title: speed
+
+# @var_title: speed
 # Maximum movement speed of the player
 # @type: float
 # @default: 300.0
@@ -43,8 +42,7 @@ const GameController = preload("res://Controllers/GameController.gd")
 func _ready() -> void:
 	_set_main_state_machine()
 
-#<FUNC>
-# @title: move_player
+# @func_title: move_player
 # Handles player movement based on input
 #
 # This function processes input from the player and applies movement
@@ -59,8 +57,6 @@ func _ready() -> void:
 func _set_main_state_machine() -> void :
 	var MainStateMachineScene = load(GlobalData.MainGameStateMachine).instantiate()
 	add_child(MainStateMachineScene)
-#</FUNC>
-
 
 
 """
