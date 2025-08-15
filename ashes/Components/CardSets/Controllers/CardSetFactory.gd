@@ -6,7 +6,7 @@ la escena de la card y la card se envia al crear del holder
 # Main player movement and input handling system
 # 
 # This script manages player movement, jumping, and input processing.
-# It extends CharacterBody2D and provides smooth movement mechanics.
+# It extends Node and provides smooth movement mechanics.
 #
 # @author: Your Name
 # @version: 1.0

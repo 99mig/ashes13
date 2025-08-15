@@ -3,11 +3,23 @@ aca estan las funciones q crean los respectivos componentes del mapa
 slots y holder 
 """
 
+## Holder Factory Controller
+## Handles player movement and input
+## @author: Your Name
+## @version: 1.0
 
-
+## create new holder
+## @param holder_type: Physics delta time
+## @param holder_position: Physics delta time
+## @param to_hold: Physics delta time
+## @return: void
 static func create_new_holder(holder_type, holder_position, to_hold):
+	## Local holder scene variable
+	## @type: Node2D
 	var new_holder_scene = load(GlobalData.HolderScene).instantiate()
 	var holder_tile_block = Game.Main.GameController.Systems.PlaymatSystems.PlaymatTilesController.get_active_tile_for_component(holder_type)
+	## holderresource variable
+	## @type: Resource
 	var new_holder_resource =  load(GlobalData.TileBlocksIndex[holder_tile_block])
 	
 
