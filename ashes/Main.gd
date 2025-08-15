@@ -6,7 +6,9 @@
 # @tag: main
 # =========================================
 
-
+## Main game script
+# This script handles player movement, combat, and interactions
+# Supports keyboard and gamepad input with smooth animations
 class_name Game
 extends Node
 
@@ -15,12 +17,15 @@ static var Main: Game
 func _init() -> void: 
 	Main = self
 
-
+# cargamos el game controller principal
 const GameController = preload("res://Controllers/GameController.gd")
 
-
+## Variables en Main en nodos
+# Los inputs del juego
 @onready var GameInput: GameInput = $Input
+# el mundo
 @onready var World: Node2D = $World
+# la interfaz
 @onready var UI: Control = $UI
 
 @onready var CurrentGameState = GlobalData.MainGameState.Start
@@ -29,8 +34,9 @@ const GameController = preload("res://Controllers/GameController.gd")
 func _ready() -> void:
 	_set_main_state_machine()
 
-## agrega el main state machine
-## @obs1: se agrega desde su propia escena
+# funcion para inicializar el state machine principal 
+# se agrega desde su propia escena
+# @return void
 func _set_main_state_machine() -> void :
 	var MainStateMachineScene = load(GlobalData.MainGameStateMachine).instantiate()
 	add_child(MainStateMachineScene)
