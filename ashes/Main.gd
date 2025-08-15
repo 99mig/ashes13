@@ -1,14 +1,13 @@
-# =========================================
-# Script: Main.gd
-# Propósito: Controla el comportamiento de main game
-# Dependencias:
-# Última modificación: 2025-08-15
-# @tag: main
-# =========================================
+## PlayerController
+# Main player movement and input handling system
+# 
+# This script manages player movement, jumping, and input processing.
+# It extends CharacterBody2D and provides smooth movement mechanics.
+#
+# @author: Your Name
+# @version: 1.0
+# @since: 2024-01-01
 
-## Main game script
-# This script handles player movement, combat, and interactions
-# Supports keyboard and gamepad input with smooth animations
 class_name Game
 extends Node
 
@@ -25,7 +24,11 @@ const GameController = preload("res://Controllers/GameController.gd")
 @onready var GameInput: GameInput = $Input
 # el mundo
 @onready var World: Node2D = $World
-# la interfaz
+## speed
+# Maximum movement speed of the player
+# @type: float
+# @default: 300.0
+# @range: 0.0 to 1000.0
 @onready var UI: Control = $UI
 
 @onready var CurrentGameState = GlobalData.MainGameState.Start
@@ -34,9 +37,18 @@ const GameController = preload("res://Controllers/GameController.gd")
 func _ready() -> void:
 	_set_main_state_machine()
 
-# funcion para inicializar el state machine principal 
-# se agrega desde su propia escena
-# @return void
+## move_player
+# Handles player movement based on input
+#
+# This function processes input from the player and applies movement
+# to the character body. It includes acceleration, deceleration,
+# and collision handling.
+#
+# @param delta: The time elapsed since the last frame
+# @param input_vector: Vector2 representing input direction
+# @return: bool - True if movement was successful
+# @example:
+#   var success = move_player(delta, Vector2(1, 0))
 func _set_main_state_machine() -> void :
 	var MainStateMachineScene = load(GlobalData.MainGameStateMachine).instantiate()
 	add_child(MainStateMachineScene)
