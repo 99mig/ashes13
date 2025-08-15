@@ -1,26 +1,30 @@
-## CardFactory
-# CardMain player movement and input handling system
-# 
-# cardThis script manages player movement, jumping, and input processing.
-# carIt extends CharacterBody2D and provides smooth movement mechanics.
-#
-# @dependencie: CardController.gd
-# @since: 2024-01-01
-"""
-la idea es q se cree el modelo dependiendo del json y el modelo se envia al crear 
-la escena de la card y la card se envia al crear del holder
-"""
-## create_card_resource
-#crea el recurso de la carta con su respectiva info
-#
-# @param card_id: string con el identificador de la carta
-# @param card_data: Dictionary el diccionario de la carta
-# @return: Resource - devuelve el recurso
-# @example:
-#   var success = move_player(delta, Vector2(1, 0))
+# @class MyCharacter
+# @description A character controller for the player
+# @author JohnDoe
+# @version 1.0.0
+# @tutorial https://example.com/tutorials/character-controller
+class_name CardFactory
+
+
+
+# @var pruebaborrar
+# @type float
+# @default 300.0
+# @desc The character's movement speed
+static var pruebaborrar
+
+# @func move_character
+# @desc Moves the character based on input
+# @param {Vector2} direction - The direction to move
+# @param {float} delta - Time since last frame
+# @return {bool} - Whether movement was successful
 static func create_card_resource(card_id, card_data: Dictionary) -> Resource:
 	var new_card_resource
 	print_debug("CARD DATA TO CREATE RESOURCE: ", card_data)
+	# @var speed
+	# @type float
+	# @default 300.0
+	# @desc The character's movement speed
 	var card_type = GlobalData.CardTypes.keys().find(card_data["Type"])
 	match card_type:
 		GlobalData.CardTypes.BaseCard :
