@@ -1,16 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://bsv3yeyg3o5x3"]
+[gd_scene load_steps=5 format=3 uid="uid://bsv3yeyg3o5x3"]
 
 [ext_resource type="Script" uid="uid://bd3u8l063oebw" path="res://Main.gd" id="1_cm0pq"]
-[ext_resource type="Script" uid="uid://beqvgbhsccksc" path="res://Controllers/ActionsController.gd" id="2_3dxm6"]
 [ext_resource type="Script" uid="uid://ddxr0cxknjyko" path="res://Controllers/InputController.gd" id="2_fos0i"]
 [ext_resource type="PackedScene" uid="uid://dqvxtb55bktgu" path="res://Components/UI/UI.tscn" id="3_3dxm6"]
 [ext_resource type="PackedScene" uid="uid://d17fjwbf76kvw" path="res://Components/World/World.tscn" id="4_lgr22"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_cm0pq")
-
-[node name="Actions" type="Node2D" parent="."]
-script = ExtResource("2_3dxm6")
 
 [node name="Input" type="Node2D" parent="."]
 script = ExtResource("2_fos0i")

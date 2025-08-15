@@ -1,3 +1,6 @@
+"""
+script que controla las actions in game
+"""
 class_name GameActions
 extends Node2D
 

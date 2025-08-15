@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://fmrfeq6lwxbt"]
+
+[ext_resource type="Script" uid="uid://bmp2mhdjxh8m3" path="res://Components/Slot/Slot.gd" id="1_jp27y"]
+[ext_resource type="TileSet" uid="uid://bgei3blmutajm" path="res://Data/Resources/TileBlocks/TileBlocks00.tres" id="2_n3qeo"]
+
+[node name="Slot" type="Node2D"]
+script = ExtResource("1_jp27y")
+
+[node name="SlotSprite" type="Sprite2D" parent="."]
+position = Vector2(-96, 16)
+
+[node name="TileBlock" type="TileMapLayer" parent="."]
+visible = false
+tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 0, 0, 8, 0, 14, 0, 0, 0)
+tile_set = ExtResource("2_n3qeo")
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionPolygon2D" parent="Area"]
+polygon = PackedVector2Array(-219, 35, -64, -84, 26, -17, 29, -1, -125, 116, -221, 47)
+
+[node name="HoldingScene" type="Node2D" parent="."]
+
+[node name="HoldingScenePosition" type="Marker2D" parent="HoldingScene"]
+position = Vector2(-96, 8)

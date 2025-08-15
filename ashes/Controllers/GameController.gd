@@ -1,3 +1,11 @@
+# =========================================
+# Script: GameController.gd
+# Propósito: Controla el flujo principal del juego
+# Dependencias: Main.gd
+# Última modificación: 2025-08-15
+# @tag: main, gameflow
+# =========================================
+
 class_name GameController
 extends Node
 """
@@ -6,11 +14,16 @@ Este es el controlador principal de todo eel flujo del juego
 cada GameState al entrar al estado va a llamar funciones de este script
 """
 
-const Services = preload("res://Services/MainServices.gd")
-const Systems = preload("res://Systems/MainSystems.gd")
+## Constantes ##
+const Services = preload("res://Services/MainServices.gd") ## Se cargan el MainService
+const Systems = preload("res://Systems/MainSystems.gd") ## Se carga el main Systems
 
-const StartupController = preload("res://Controllers/StartupController.gd")
+const StartupController = preload("res://Controllers/StartupController.gd") ## Se carga e startupController
 
+
+## Esta es la funcion que se llama apra cargar todos los archivos que contiene la informacion en tipo JSON
+## @obs1: se llama desde el state incial de state_machine
+## @return bool - True si se cargo correctamente todo
 static func load_game() -> bool :
 	
 	"""
@@ -35,7 +48,7 @@ static func load_game() -> bool :
 		print_debug("Can't load tile blocks data")
 		return false
 	#popular la variable con los tileblocks activos
-	if !Systems.PlaymatSystem.PlaymatTilesController.set_active_playmat_tiles(playmat_tiles_data):
+	if !Systems.PlaymatSystems.PlaymatTilesController.set_active_playmat_tiles(playmat_tiles_data):
 		print_debug("Can't active tile blocks")
 		return false
 		
@@ -59,4 +72,8 @@ static func start_game() -> bool :
 	if !StartupController.startup_decks() :
 		printerr("Can't startup decks")
 		return false
+	if !StartupController.startup_playmat() :
+		printerr("Can't startup playmat")
+		return false
 	return true
+		

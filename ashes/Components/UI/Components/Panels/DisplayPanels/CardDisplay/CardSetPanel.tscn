@@ -1,0 +1,235 @@
+[gd_scene load_steps=2 format=3 uid="uid://bha1kvlyqutpg"]
+
+[ext_resource type="Texture2D" uid="uid://ch5wxonrff0nj" path="res://Data/Assets/Cards/CardDefault.png" id="1_s7oto"]
+
+[node name="CollectionPanel" type="Control"]
+custom_minimum_size = Vector2(600, 900)
+layout_mode = 3
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -600.0
+offset_top = -450.0
+offset_bottom = 450.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/CenterContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/CenterContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "CARD SET NAME"
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/CenterContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Panel" type="Panel" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/HBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s7oto")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Panel2" type="Panel" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/HBoxContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s7oto")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/CenterContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer"]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 5
+
+[node name="Panel3" type="Panel" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(50, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer/Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s7oto")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Panel4" type="Panel" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(50, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer/Panel4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s7oto")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Panel5" type="Panel" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(50, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer/Panel5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s7oto")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Panel6" type="Panel" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(50, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer/Panel6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s7oto")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Panel7" type="Panel" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(50, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer/Panel7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s7oto")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Panel8" type="Panel" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(50, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer/Panel8"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s7oto")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Panel9" type="Panel" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(50, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer/Panel9"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s7oto")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Panel10" type="Panel" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(50, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer/MarginContainer/VBoxContainer/PanelContainer/ScrollContainer/GridContainer/Panel10"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s7oto")
+expand_mode = 5
+stretch_mode = 5

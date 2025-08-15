@@ -144,7 +144,7 @@ enum HolderTypes {
 """
 Slot
 """
-const SlotScene = ""
+const SlotScene = "res://Components/Slot/Slot.tscn"
 enum SlotTypes {
 	BaseSlot,
 	HeroSlot,

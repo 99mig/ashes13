@@ -3,7 +3,7 @@
 		"Title": "StarterDeck01",
 		"FrontCard": "00_001_Card",
 		"CreatedBy": "Ashes",
-		"StartPosition": "(0, -3)",
+		"StartPosition": "(-3, 1)",
 		"Hero": [
 			"00_001_Card",
 			"00_003_Card"
@@ -23,7 +23,7 @@
 		"Title": "StarterDeck02",
 		"FrontCard": "00_002_Card",
 		"CreatedBy": "Ashes",
-		"StartPosition": "(1, -5)",
+		"StartPosition": "(1, 1)",
 		"Hero": [
 			"00_002_Card",
 			"00_003_Card"
@@ -43,7 +43,7 @@
 		"Title": "StarterDeck03",
 		"FrontCard": "00_003_Card",
 		"CreatedBy": "Ashes",
-		"StartPosition": "(-2, -4)",
+		"StartPosition": "(5, 1)",
 		"Hero": [
 			"00_003_Card",
 			"00_006_Card"

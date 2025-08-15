@@ -11,6 +11,7 @@ script = ExtResource("1_p4mt2")
 position = Vector2(-32, -32)
 
 [node name="TileBlock" type="TileMapLayer" parent="."]
+visible = false
 tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 0, 0, 16, 0, 19, 0, 0, 0)
 tile_set = ExtResource("2_spd3t")
 

@@ -11,7 +11,7 @@ static var ActionsOnState : Dictionary = {
 
 static func drag_cardset(cardset) :
 	print_debug("SELECT FUNC")
-	Game.Main.Actions.start_drag(cardset.get_parent().get_parent())
+	World.Main.Actions.start_drag(cardset.get_parent().get_parent())
 
 static func select_cardset(cardset) :
 	print_debug("Select: ", cardset)

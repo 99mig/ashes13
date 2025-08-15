@@ -1,3 +1,12 @@
+# =========================================
+# Script: Main.gd
+# Propósito: Controla el comportamiento de main game
+# Dependencias:
+# Última modificación: 2025-08-15
+# @tag: main
+# =========================================
+
+
 class_name Game
 extends Node
 
@@ -6,13 +15,11 @@ static var Main: Game
 func _init() -> void: 
 	Main = self
 
-##----------------------------------------------------------------##
 
 const GameController = preload("res://Controllers/GameController.gd")
 
 
 @onready var GameInput: GameInput = $Input
-@onready var Actions: Node2D = $Actions
 @onready var World: Node2D = $World
 @onready var UI: Control = $UI
 
@@ -22,7 +29,8 @@ const GameController = preload("res://Controllers/GameController.gd")
 func _ready() -> void:
 	_set_main_state_machine()
 
-
+## agrega el main state machine
+## @obs1: se agrega desde su propia escena
 func _set_main_state_machine() -> void :
 	var MainStateMachineScene = load(GlobalData.MainGameStateMachine).instantiate()
 	add_child(MainStateMachineScene)
