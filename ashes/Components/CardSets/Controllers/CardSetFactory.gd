@@ -11,6 +11,10 @@ la escena de la card y la card se envia al crear del holder
 # @author: Your Name
 # @version: 1.0
 # @since: 2024-01-01
+class_name CardSetFactory
+
+static var pruebaborrar
+
 
 ## create_new_cardset
 # recive el id del set y el diccionario con los datos y devuelve el nodo creado
