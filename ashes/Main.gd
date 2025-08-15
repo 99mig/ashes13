@@ -1,4 +1,4 @@
-## PlayerController
+## Main Game
 # Main player movement and input handling system
 # 
 # This script manages player movement, jumping, and input processing.
@@ -6,7 +6,7 @@
 #
 # @author: Your Name
 # @version: 1.0
-# @since: 2024-01-01
+# @since: 2024-01-01z
 
 class_name Game
 extends Node
@@ -19,12 +19,14 @@ func _init() -> void:
 # cargamos el game controller principal
 const GameController = preload("res://Controllers/GameController.gd")
 
-## Variables en Main en nodos
+# @title: GameInput 
+# Variables en Main en nodos
 # Los inputs del juego
 @onready var GameInput: GameInput = $Input
+# @title: world
 # el mundo
 @onready var World: Node2D = $World
-## speed
+# @title: speed
 # Maximum movement speed of the player
 # @type: float
 # @default: 300.0
@@ -37,7 +39,7 @@ const GameController = preload("res://Controllers/GameController.gd")
 func _ready() -> void:
 	_set_main_state_machine()
 
-## move_player
+# @title: move_player
 # Handles player movement based on input
 #
 # This function processes input from the player and applies movement

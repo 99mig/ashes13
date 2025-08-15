@@ -16,7 +16,7 @@ class_name CardSetFactory
 static var pruebaborrar
 
 
-## create_new_cardset
+# @title: create_new_cardset
 # recive el id del set y el diccionario con los datos y devuelve el nodo creado
 
 # @param cardset_id: es el identificador del cardset
@@ -27,7 +27,7 @@ static func create_new_cardset(cardset_id, cardset_data: Dictionary) -> Node2D:
 	var cardset_scene = create_cardset_scene(cardset_id, cardset_resource)
 	return cardset_scene
 
-## create_new_cardset2
+# @title: create_new_cardset2
 # 2recive el id del set y el diccionario con los datos y devuelve el nodo creado
 
 # @param cardset_id: es el identificador del cardset
