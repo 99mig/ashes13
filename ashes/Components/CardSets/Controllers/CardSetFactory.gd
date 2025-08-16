@@ -2,15 +2,9 @@
 la idea es q se cree el modelo dependiendo del json y el modelo se envia al crear 
 la escena de la card y la card se envia al crear del holder
 """
-## CardSetFactory
-# Main player movement and input handling system
-# 
-# This script manages player movement, jumping, and input processing.
-# It extends Node and provides smooth movement mechanics.
-#
-# @author: Your Name
-# @version: 1.0
-# @since: 2024-01-01
+## @class_doc
+## @description este es la factory de cardsets
+## @tags cardset, core
 class_name CardSetFactory
 
 static var pruebaborrar
@@ -27,15 +21,16 @@ static func create_new_cardset(cardset_id, cardset_data: Dictionary) -> Node2D:
 	return cardset_scene
 
 
-# @func_title: create_new_cardset2
-# 2recive el id del set y el diccionario con los datos y devuelve el nodo creado
-
-# @param cardset_id: es el identificador del cardset
-# @param cardset_data: Dictionary contiende los datos necesairos
-# @return: Node2D - devuelve la escena completa del cardset
+## @func_doc
+## @description This function handles player movementssdsdsdsdsd
+## @param cardset_id: el identificard del cardset
+## @param cardset_data: el diccionario con los datos
+## @return Resource creaado apartir del identificador
+## @tags movement, core
 static func create_cardset_resource(cardset_id, cardset_data: Dictionary) -> Resource:
-	# @var_title: new_cardset_resource
-	# sostiene el resource del moento
+	## @var_doc
+	## @description thius variable is loval for the function
+	## @tags resoruces, local
 	var new_cardset_resource
 	new_cardset_resource = BaseCardSetModel.new()
 	

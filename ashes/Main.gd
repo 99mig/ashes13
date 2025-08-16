@@ -15,10 +15,10 @@ extends Node
 # @tags: movement, config
 static var Main: Game ## Main reference
 
-## Handle physics processing each frame
-## Manages movement, jumping, and gravity
-## @param delta: Time since last frame in seconds
-## @tags: physics, movement, core
+
+## @func_doc
+## @description inicia la refelrencia globar del MainGame
+## @tags init
 func _init() -> void: 
 	# refernecia principal
 	Main = self
@@ -36,23 +36,25 @@ const GameController = preload("res://Controllers/GameController.gd")
 # el mundo
 @onready var World: Node2D = $World
 
-# @var_title: speed
-# Maximum movement speed of the player
-# @type: float
-# @default: 300.0
-# @range: 0.0 to 1000.0
+## @var_doc
+## @description UI main refernece
+## @tags HUD
 @onready var UI: Control = $UI
 
+## @var_doc
+## @description holds the current game state
+## @tags onready
 @onready var CurrentGameState = GlobalData.MainGameState.Start
 
 
 func _ready() -> void:
 	_set_main_state_machine()
 
-## anade el state machine principal
-## Manages ssssssssssssravity
-## @return: void
-## @tags: physics, movement, core
+## @func_doc
+## @description inicia el state machine principal
+## agrega el machine a la scene main
+## @return void
+## @tags tag1, tag2, tag3  
 func _set_main_state_machine() -> void :
 	# en esta variable se inicializa el scipt
 	var MainStateMachineScene = load(GlobalData.MainGameStateMachine).instantiate() # no se si hay dif de comment
