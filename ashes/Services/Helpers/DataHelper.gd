@@ -1,3 +1,8 @@
+## @class_doc
+## @description Data Helper - A comprehensive player movement and interaction system
+## Handles input processing, physics, and state management for the main character
+## @tags core, helper
+## @depends MainServices: implements the game flow
 static func string_to_vector2i(input : String) -> Vector2i:
 	# Eliminar todos los espacios y paréntesis
 	var cleaned_input = input.replace(" ", "").replace("(", "").replace(")", "")

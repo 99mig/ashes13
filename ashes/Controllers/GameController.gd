@@ -1,11 +1,8 @@
-# =========================================
-# Script: GameController.gd
-# Propósito: Controla el flujo principal del juego
-# Dependencias: Main.gd
-# Última modificación: 2025-08-15
-# @tag: main, gameflow
-# =========================================
-
+## @class_doc
+## @description Game Controller - A comprehensive player movement and interaction system
+## Handles input processing, physics, and state management for the main character
+## @tags core, controller
+## @depends Main: manages the game flow
 class_name GameController
 extends Node
 """
